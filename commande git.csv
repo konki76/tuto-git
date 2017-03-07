@@ -1,1 +1,17 @@
-
+initialiser le répertoire courant	git init	
+	git status	
+ajout d'un fichier à l'index de git	git add monfichier.txt	
+ajout de tout les fichiers à l'index courant	git add .	au début il y a la branche par défaut master
+enregistrer des modifications et laisser un message	"git commit -m ""message précis"""	on peut ne pas laisser de message (-m suivi du message entre guillemets) mais ce n'est pas recommandé pour s'y retrouver par la suite
+mettre à jour un fichier déjà dans l'index en 1 étape	git commit -am	
+afficher tout les commit le plus récent en haut	git log	un commit possède un SHA identifiant propre, l'auteur et la date de modification, enfin le message
+se positionner sur un commit plus ancien	git checkout SHAducommit	ex : revenir en arrière pour repérer des erreurs
+revenir sur le commit le plus récent	git checkout master	
+copier un repository de github sur son pc	git clone lienFourniParGitHub 	
+envoyer son repository sur son repo github	git push origin master	
+récupérer les modifications de son repo github	git pull origin master	penser à synchroniser souvent lorsque l'on est plusieurs à travailler sur un projet
+voir les branches présentes dans son repo	git branch	* indique la branche courante
+créer une nouvelle branche	git branch nouvelleBranche	
+se positionner sur la branche et la créer	git checkout -b nouvelleBranche	
+fusionner des branches	git merge mabranche	si on est sur master cela ajoutera les fichiers de mabranche et s'il y a des conflits il faudra les résoudres
+retrouver qui a fait une modification 	git blame nomdufichier.extension	cette commande renvoie le début du SHA du commit
