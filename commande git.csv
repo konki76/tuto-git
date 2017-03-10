@@ -11,7 +11,9 @@ copier un repository de github sur son pc	git clone lienFourniParGitHub
 envoyer son repository sur son repo github	git push origin master	
 récupérer les modifications de son repo github	git pull origin master	penser à synchroniser souvent lorsque l'on est plusieurs à travailler sur un projet
 voir les branches présentes dans son repo	git branch	* indique la branche courante
-créer une nouvelle branche	git branch nouvelleBranche	
-se positionner sur la branche et la créer	git checkout -b nouvelleBranche	
-fusionner des branches	git merge mabranche	si on est sur master cela ajoutera les fichiers de mabranche et s'il y a des conflits il faudra les résoudres
+créer une nouvelle branche	git branch nouvelleBranche	La branche où l'on se trouve est « copier » on peux y effectuer des modifications sans changer la branche de départ
+se positionner et créer la branche	git checkout -b nouvelleBranche	
+fusionner des branches	git merge mabranche	si on se situe sur master cela ajoutera les fichiers de mabranche et s'il y a des conflits de fichiers il faudra les résoudre
 retrouver qui a fait une modification 	git blame nomdufichier.extension	cette commande renvoie le début du SHA du commit
+mettre des fichiers en attentes	git stash	on revient au dernier commit en gardant en mémoire les modif dans le stash
+récupérer les modifications mises de cotées	git stash pop	vide le stash
