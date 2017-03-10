@@ -1,5 +1,5 @@
 initialiser le répertoire courant	git init	
-	git status	
+affiche les différences avec son arbre de travail	git status	"présent dans l'index mais modifié, pas dans l'index ""untracked files"""
 ajout d'un fichier à l'index de git	git add monfichier.txt	
 ajout de tout les fichiers à l'index courant	git add .	au début il y a la branche par défaut master
 enregistrer des modifications et laisser un message	"git commit -m ""message précis"""	on peut ne pas laisser de message (-m suivi du message entre guillemets) mais ce n'est pas recommandé pour s'y retrouver par la suite
